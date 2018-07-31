@@ -1,22 +1,22 @@
 <html>
 <head>
 <head>
+<style>
+audio {
 
 </head>
 </head>
 <body>
-<audio id="myAudio" controls autoplay>
-  <source src="Dazzle_Bende.mp3" type="audio/mpeg">
-  Your browser does not support the audio tag.
-</audio>
+<audio id="audio" style="display:none;" src="Dazzle_Bende.mp3" controls autoplay 
+loop onloadeddata="setHalfVolume()">
 
 <p id="demo"></p>
 
 <script>
-function myFunction() {
-    var x = document.getElementById("myAudio").autoplay;
-    document.getElementById("demo").innerHTML = x;
-}
+    function setHalfVolume() {
+        var myAudio = document.getElementById("audio");
+        myAudio.volume = 0.2;
+    }
 </script>
 
 
