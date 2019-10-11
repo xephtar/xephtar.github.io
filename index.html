@@ -64,6 +64,13 @@ p{
   right:1%;
   height:25%;
 }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
 
 </style>
 </head>
@@ -81,14 +88,16 @@ p{
     <img src="img\deathstar.png" alt="deathstar" id="deathold">
     <img src= "img\blowup.gif"; alt="deathstar" id="deathnew" style="display:none" width="100%">
     <h1 style="color:white; font-family:impact">D E A T H S T A R</h1>
-    <p> the most deadly weapon </p>
   </div>
   <div class="column">
   </div>
 </div>
 
 <div class="parallax2"></div>
-
+	
+<div class="footer">
+	<p> the most deadly weapon </p>
+</div>
 <script type="text/javascript">
   document.getElementById('deathold').onmouseover = function() {changeNEW()};
   document.getElementById('deathnew').onmouseout = function() {changeOLD()};
